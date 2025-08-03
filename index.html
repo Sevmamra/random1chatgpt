@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galactic Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="planets"></div>
+
+  <header class="main-header">
+    <div class="logo">🚀 Galactic Dev</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section full-vh">
+    <div class="hero-content">
+      <h1 class="glow-text">Welcome to My Universe</h1>
+      <p class="typewriter">Exploring the galaxy of code...</p>
+      <a href="#projects" class="btn-animated">View Projects</a>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title">🚀 Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="project-image"></div>
+        <div class="project-info">
+          <h3>Star Mapper</h3>
+          <p>An animated JS-powered star chart with real-time celestial data.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image"></div>
+        <div class="project-info">
+          <h3>Galaxy Blog</h3>
+          <p>A minimal, animated blog interface inspired by deep space themes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section dark-section">
+    <h2 class="section-title">👨‍🚀 About Me</h2>
+    <div class="about-content">
+      <img src="avatar.png" alt="Avatar" class="avatar"/>
+      <div class="about-text">
+        <p>I'm a space-obsessed full stack dev, building interactive web experiences using only HTML, CSS & JS. Let's travel the web-universe together!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">📡 Contact</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Galactic Dev. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+  <!-- Floating Stars Background Layer -->
+  <div class="floating-stars">
+    <div class="star" style="top:10%; left:20%;"></div>
+    <div class="star" style="top:30%; left:60%;"></div>
+    <div class="star" style="top:70%; left:40%;"></div>
+    <div class="star" style="top:50%; left:80%;"></div>
+    <div class="star" style="top:90%; left:10%;"></div>
+    <div class="star" style="top:20%; left:70%;"></div>
+  </div>
+
+  <!-- Animated Galaxy Panel -->
+  <div class="galaxy-panel">
+    <h2 class="galaxy-heading">🌌 Explore the Galaxy</h2>
+    <p class="galaxy-text">Dive into cosmic experiences powered by frontend magic.</p>
+    <div class="galaxy-cards">
+      <div class="galaxy-card">
+        <h3>Black Hole UI</h3>
+        <p>Dynamic UI element generator with gravity pull animation.</p>
+      </div>
+      <div class="galaxy-card">
+        <h3>Nebula Designer</h3>
+        <p>Generate vibrant nebula backgrounds with swirling FX.</p>
+      </div>
+      <div class="galaxy-card">
+        <h3>Wormhole Router</h3>
+        <p>Custom animated page transitions like wormhole jumps!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials-section">
+    <h2 class="section-title">✨ Testimonials</h2>
+    <div class="testimonials-wrapper">
+      <div class="testimonial">
+        <p>"Truly stellar animations! Looks like it's built in another dimension!"</p>
+        <span>- Zortron from Mars Inc.</span>
+      </div>
+      <div class="testimonial">
+        <p>"The cleanest JavaScript I've ever seen across galaxies."</p>
+        <span>- Galactic Coders Org</span>
+      </div>
+      <div class="testimonial">
+        <p>"CSS transitions so smooth, they bend time."</p>
+        <span>- Hyperdrive UI Studios</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Animated Orbit -->
+  <section class="section skills-orbit">
+    <h2 class="section-title">🛠 Skills</h2>
+    <div class="orbit-container">
+      <div class="center-sun">Me</div>
+      <div class="orbit orbit-1"><span>HTML</span></div>
+      <div class="orbit orbit-2"><span>CSS</span></div>
+      <div class="orbit orbit-3"><span>JavaScript</span></div>
+      <div class="orbit orbit-4"><span>Animations</span></div>
+    </div>
+  </section>
+
+  <!-- Floating Asteroids SVG Layer -->
+  <svg class="asteroids-layer" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="5" fill="#aaa" />
+    <circle cx="80" cy="60" r="3" fill="#999" />
+    <circle cx="150" cy="120" r="7" fill="#bbb" />
+    <circle cx="220" cy="200" r="4" fill="#888" />
+    <circle cx="300" cy="50" r="6" fill="#aaa" />
+  </svg>
+
+  <!-- Hidden Launch Panel (to be animated via JS) -->
+  <div class="launch-panel" id="launchPanel">
+    <h2>💥 Initiating Launch...</h2>
+    <p>Preparing hyperspace drive...</p>
+    <div class="loader"></div>
+  </div>
+
+  <!-- Hidden Easter Egg Section -->
+  <div class="easter-egg" id="easterEgg">
+    <h2>🎉 Secret Unlocked!</h2>
+    <p>You’ve found the hidden nebula portal! 🌠</p>
+    <button onclick="closeEasterEgg()">Close</button>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" onclick="scrollToTop()">⬆ Top</button>
+
+  <!-- Audio FX -->
+  <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+  <audio id="backgroundMusic" src="space-music.mp3" autoplay loop></audio>
+  <!-- Control Center -->
+  <div class="control-center">
+    <h3>🎛 Galactic Controls</h3>
+    <div class="toggle-group">
+      <label>
+        <input type="checkbox" id="toggleMusic" checked />
+        <span>Background Music</span>
+      </label>
+      <label>
+        <input type="checkbox" id="toggleStars" checked />
+        <span>Starfield</span>
+      </label>
+      <label>
+        <input type="checkbox" id="toggleAnimations" checked />
+        <span>Animations</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Timeline of Journey -->
+  <section class="section timeline-section">
+    <h2 class="section-title">🛰 My Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>2021 – First Rocket Launch</h4>
+          <p>Started learning HTML and CSS – the countdown began 🚀</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>2022 – Starship JavaScript</h4>
+          <p>Built interactive interfaces and JS-powered animations</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>2023 – Intergalactic Freelancing</h4>
+          <p>Worked for alien clients with pixel-perfect requirements 👾</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>2025 – Warp-Speed Portfolio</h4>
+          <p>Created this website – breaking the time barrier with HTML/CSS/JS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Counter Section -->
+  <section class="section counters-section">
+    <h2 class="section-title">🏆 Achievements</h2>
+    <div class="counters-container">
+      <div class="counter">
+        <h3 id="projectsCounter">0</h3>
+        <p>Projects Launched</p>
+      </div>
+      <div class="counter">
+        <h3 id="linesCodeCounter">0</h3>
+        <p>Lines of Code</p>
+      </div>
+      <div class="counter">
+        <h3 id="coffeeCounter">0</h3>
+        <p>Cups of Intergalactic Coffee</p>
+      </div>
+      <div class="counter">
+        <h3 id="aliensServed">0</h3>
+        <p>Aliens Served</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Section -->
+  <section class="parallax-section">
+    <div class="parallax-bg"></div>
+    <div class="parallax-content">
+      <h2>🌠 Enter the Warp Zone</h2>
+      <p>This space is powered entirely by HTML, CSS and JavaScript. No frameworks. No shortcuts.</p>
+    </div>
+  </section>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgressBar"></div>
+
+  <!-- Floating Space Debris -->
+  <div class="space-debris">
+    <div class="debris debris-1"></div>
+    <div class="debris debris-2"></div>
+    <div class="debris debris-3"></div>
+    <div class="debris debris-4"></div>
+    <div class="debris debris-5"></div>
+  </div>
+
+  <!-- Modal for Project Previews -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle">Project Title</h3>
+      <p id="modalDescription">Detailed description of the selected project will appear here.</p>
+      <img id="modalImage" src="" alt="Project Preview" />
+    </div>
+  </div>
+
+  <!-- JS-driven Alerts -->
+  <div class="alert" id="globalAlert">
+    <p id="alertMessage">This is a JS alert box with animations!</p>
+    <span onclick="closeAlert()">×</span>
+  </div>
+
+  <!-- Transition Curtain -->
+  <div id="transitionCurtain"></div>
+  <!-- Social Links Floating Sidebar -->
+  <div class="social-sidebar">
+    <a href="https://twitter.com" target="_blank" class="social-icon twitter">X</a>
+    <a href="https://github.com" target="_blank" class="social-icon github">GH</a>
+    <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">IN</a>
+    <a href="mailto:alien@galaxy.dev" class="social-icon email">✉️</a>
+  </div>
+
+  <!-- Theme Customizer Panel -->
+  <div class="theme-panel">
+    <h3>🎨 Theme Controls</h3>
+    <div class="theme-options">
+      <button onclick="setTheme('dark')">Dark Mode</button>
+      <button onclick="setTheme('light')">Light Mode</button>
+      <button onclick="setTheme('galaxy')">Galaxy Mode</button>
+    </div>
+  </div>
+
+  <!-- Interactive Terminal -->
+  <section class="section terminal-section">
+    <h2 class="section-title">💻 Terminal</h2>
+    <div class="terminal">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <p>~/galaxy/</p>
+      </div>
+      <div class="terminal-body" id="terminalOutput">
+        <p><span class="prompt">guest@galaxy:</span> Welcome!</p>
+      </div>
+      <input type="text" id="terminalInput" placeholder="Type a command..." onkeydown="handleTerminal(event)" />
+    </div>
+  </section>
+
+  <!-- CSS Grid Showcase -->
+  <section class="section grid-showcase">
+    <h2 class="section-title">📐 CSS Grid Magic</h2>
+    <div class="grid-container">
+      <div class="grid-item">🚀</div>
+      <div class="grid-item">🪐</div>
+      <div class="grid-item">🌟</div>
+      <div class="grid-item">🛸</div>
+      <div class="grid-item">👾</div>
+      <div class="grid-item">🌌</div>
+    </div>
+  </section>
+
+  <!-- Credits Section -->
+  <section class="section credits-section">
+    <h2 class="section-title">📜 Credits</h2>
+    <ul class="credits-list">
+      <li>Built by: Galactic Dev</li>
+      <li>Powered by: HTML, CSS, JavaScript</li>
+      <li>Inspired by: NASA, Sci-fi Movies & Open Source</li>
+      <li>Sounds from: freesound.org</li>
+      <li>Fonts from: Google Fonts</li>
+    </ul>
+  </section>
+
+  <!-- Page End Marker -->
+  <div class="page-end-marker">
+    <p>🌌 You’ve reached the edge of the galaxy.</p>
+    <p>But wait... there’s more.</p>
+  </div>
+
+  <!-- Feedback Form -->
+  <section class="section feedback-section">
+    <h2 class="section-title">💬 Feedback</h2>
+    <form class="feedback-form" id="feedbackForm">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Thoughts..." required></textarea>
+      <button type="submit" class="btn-submit">Send Feedback</button>
+    </form>
+    <div id="feedbackResponse"></div>
+  </section>
+
+  <!-- Dynamic Background Toggle -->
+  <section class="section background-control-section">
+    <h2 class="section-title">🌁 Background Modes</h2>
+    <div class="bg-buttons">
+      <button onclick="setBackground('stars')">Stars</button>
+      <button onclick="setBackground('nebula')">Nebula</button>
+      <button onclick="setBackground('void')">Dark Void</button>
+    </div>
+  </section>
+
+  <!-- Particle Overlay (Canvas) -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Magnetic Button Wrapper -->
+  <div class="magnetic-button-wrapper">
+    <button class="magnetic-button" id="magBtn">🧲 Hover Me</button>
+  </div>
+
+  <!-- Comet Trails -->
+  <div class="comet comet-1"></div>
+  <div class="comet comet-2"></div>
+  <div class="comet comet-3"></div>
+  <!-- Hidden Galactic Hint Box -->
+  <div class="hint-box" id="hintBox">
+    <p>💡 Hint: Press ↑ ↑ ↓ ↓ ← → ← → B A to unlock Dev Mode!</p>
+  </div>
+
+  <!-- Starfield Navigation Trail -->
+  <div class="trail trail-1"></div>
+  <div class="trail trail-2"></div>
+  <div class="trail trail-3"></div>
+  <div class="trail trail-4"></div>
+
+  <!-- Mission Objectives Section -->
+  <section class="section objectives-section">
+    <h2 class="section-title">📌 Mission Objectives</h2>
+    <ul class="mission-list">
+      <li>Complete 2000 lines of HTML with cosmic themes 🌠</li>
+      <li>Integrate animated layers and reactive elements 🚨</li>
+      <li>Use 0 external libraries – full vanilla stack 💯</li>
+      <li>Blow the user’s mind with frontend wizardry 🧙‍♂️</li>
+    </ul>
+  </section>
+
+  <!-- Code Sample Display Section -->
+  <section class="section code-display-section">
+    <h2 class="section-title">🧬 Code Fragments</h2>
+    <pre class="code-snippet">
+<code>
+function galacticGreeting() {
+  console.log("👽 Hello, Earthling!");
+}
+galacticGreeting();
+</code>
+    </pre>
+  </section>
+
+  <!-- Accessibility Statement -->
+  <section class="section accessibility-section">
+    <h2 class="section-title">♿ Accessibility</h2>
+    <p>Every element is keyboard navigable. Aria tags included. High-contrast mode coming soon!</p>
+  </section>
+
+  <!-- Night Mode Overlay -->
+  <div class="night-overlay" id="nightOverlay"></div>
+
+  <!-- Space Stats Meter -->
+  <section class="section stats-section">
+    <h2 class="section-title">📊 Space Stats</h2>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <label for="htmlSkill">HTML</label>
+        <progress id="htmlSkill" value="95" max="100"></progress>
+      </div>
+      <div class="stat-item">
+        <label for="cssSkill">CSS</label>
+        <progress id="cssSkill" value="90" max="100"></progress>
+      </div>
+      <div class="stat-item">
+        <label for="jsSkill">JavaScript</label>
+        <progress id="jsSkill" value="98" max="100"></progress>
+      </div>
+      <div class="stat-item">
+        <label for="uxSkill">UI/UX</label>
+        <progress id="uxSkill" value="88" max="100"></progress>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Rings Animation -->
+  <div class="ring ring-1"></div>
+  <div class="ring ring-2"></div>
+  <div class="ring ring-3"></div>
+  <div class="ring ring-4"></div>
+
+  <!-- Glitch Text Display -->
+  <section class="section glitch-text-section">
+    <h2 class="glitch" data-text="Error 404">Error 404</h2>
+    <p>Oops! You’ve reached a black hole of content. No worries, let’s warp back to reality.</p>
+  </section>
+
+  <!-- Rocket Trail -->
+  <div class="rocket-wrapper">
+    <img src="rocket.svg" alt="Rocket" class="rocket-img"/>
+    <div class="rocket-trail"></div>
+  </div>
+
+  <!-- Aurora Beam Effect -->
+  <div class="aurora-beam beam-1"></div>
+  <div class="aurora-beam beam-2"></div>
+
+  <!-- Final Contact Prompt -->
+  <section class="section final-contact">
+    <h2 class="section-title">📬 Reach Out</h2>
+    <p>Whether you're human, bot, or extra-terrestrial, drop me a message!</p>
+    <a href="#contact" class="btn-animated">Open Contact Form</a>
+  </section>
+
+  <!-- Thank You Popup -->
+  <div class="thank-you-popup" id="thankYouPopup">
+    <h3>🙏 Thank You</h3>
+    <p>Your signal has been received. Response ETA: light speed!</p>
+    <button onclick="closeThankYou()">Close</button>
+  </div>
+  <!-- SVG Planet Art Display -->
+  <section class="section planet-art-section">
+    <h2 class="section-title">🌍 Planetary SVG Showcase</h2>
+    <div class="planet-svg">
+      <svg viewBox="0 0 200 200" width="200" height="200">
+        <circle cx="100" cy="100" r="80" fill="url(#planetGradient)" />
+        <defs>
+          <radialGradient id="planetGradient">
+            <stop offset="0%" stop-color="#49f2ff"/>
+            <stop offset="100%" stop-color="#001f3f"/>
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+    <p>This planet is rendered using pure SVG and CSS animations.</p>
+  </section>
+
+  <!-- 3D Tilt Cards Section -->
+  <section class="section tilt-cards-section">
+    <h2 class="section-title">🎴 3D Tilt Cards</h2>
+    <div class="tilt-card-wrapper">
+      <div class="tilt-card">
+        <div class="card-front">Frontend</div>
+        <div class="card-back">React-Free CSS Mastery</div>
+      </div>
+      <div class="tilt-card">
+        <div class="card-front">Animations</div>
+        <div class="card-back">Pure CSS + JS Motion</div>
+      </div>
+      <div class="tilt-card">
+        <div class="card-front">Galaxy UI</div>
+        <div class="card-back">Themed Cosmic Layouts</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CSS Art Avatar -->
+  <section class="section css-art-section">
+    <h2 class="section-title">🎨 CSS Art Avatar</h2>
+    <div class="css-avatar">
+      <div class="face">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+      </div>
+      <p>CSS-only alien face – because why not?</p>
+    </div>
+  </section>
+
+  <!-- Floating Orbs UI Layer -->
+  <div class="floating-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+    <div class="orb orb-5"></div>
+  </div>
+
+  <!-- Audio Visualizer Section -->
+  <section class="section audio-visualizer-section">
+    <h2 class="section-title">🔊 Audio Visualizer</h2>
+    <canvas id="audioCanvas" width="600" height="200"></canvas>
+    <p>Visualizing sound waves from background music.</p>
+  </section>
+
+  <!-- Morphing Blob Background -->
+  <div class="morphing-blob"></div>
+
+  <!-- Password Protected Area (No JS Auth Yet) -->
+  <section class="section restricted-area">
+    <h2 class="section-title">🔐 Dev Zone</h2>
+    <p>This area requires access credentials.</p>
+    <form class="login-form" onsubmit="return false;">
+      <input type="password" id="accessKey" placeholder="Enter Secret Code" />
+      <button onclick="checkAccess()">Unlock</button>
+    </form>
+    <div id="accessStatus"></div>
+  </section>
+
+  <!-- Story Mode Section -->
+  <section class="section story-section">
+    <h2 class="section-title">📚 Story Mode</h2>
+    <div class="story-container">
+      <p id="storyText">Initializing...</p>
+      <button onclick="nextStory()">Continue</button>
+    </div>
+  </section>
+
+  <!-- Scanner Overlay -->
+  <div class="scanner">
+    <div class="scanner-line"></div>
+  </div>
+
+  <!-- Constellation Lines Canvas -->
+  <canvas id="constellationCanvas"></canvas>
+
+  <!-- Star Rating System -->
+  <section class="section star-rating">
+    <h2 class="section-title">⭐ Rate This Website</h2>
+    <div class="rating-stars">
+      <span class="star" onclick="rateSite(1)">★</span>
+      <span class="star" onclick="rateSite(2)">★</span>
+      <span class="star" onclick="rateSite(3)">★</span>
+      <span class="star" onclick="rateSite(4)">★</span>
+      <span class="star" onclick="rateSite(5)">★</span>
+    </div>
+    <p id="ratingMessage"></p>
+  </section>
+  <!-- Mini Game Panel -->
+  <section class="section mini-game-section">
+    <h2 class="section-title">🎮 Mini Asteroid Clicker</h2>
+    <div class="game-panel">
+      <p>Score: <span id="asteroidScore">0</span></p>
+      <button onclick="spawnAsteroid()" class="btn-asteroid">Spawn Asteroid</button>
+      <div id="asteroidZone"></div>
+    </div>
+  </section>
+
+  <!-- Type Glitch Text Block -->
+  <section class="section type-glitch-section">
+    <h2 class="glitch-heading" data-glitch="CODE OR DIE">CODE OR DIE</h2>
+    <p class="glitch-desc">This glitchy message is running from a shifting CSS & JS loop.</p>
+  </section>
+
+  <!-- Code Command Console -->
+  <section class="section command-console-section">
+    <h2 class="section-title">🧪 Code Console</h2>
+    <div class="console-shell" id="codeConsole">
+      <p><span class="console-prompt">[dev@terminal]</span> Ready for input...</p>
+    </div>
+    <input type="text" id="consoleInput" placeholder="> Type code here" onkeydown="handleCodeCommand(event)" />
+  </section>
+
+  <!-- Slide Reveal UI Section -->
+  <section class="section slide-reveal-section">
+    <h2 class="section-title">📂 Slide Reveal Cards</h2>
+    <div class="slide-card-group">
+      <div class="slide-card">
+        <div class="slide-content front">Hover Me</div>
+        <div class="slide-content back">Revealed Content!</div>
+      </div>
+      <div class="slide-card">
+        <div class="slide-content front">Surprise</div>
+        <div class="slide-content back">It’s Animated!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Motion Trails Section -->
+  <div class="motion-trails">
+    <div class="trail-dot"></div>
+    <div class="trail-dot"></div>
+    <div class="trail-dot"></div>
+    <div class="trail-dot"></div>
+    <div class="trail-dot"></div>
+  </div>
+
+  <!-- Flip Panel Fun -->
+  <section class="section flip-panel-section">
+    <h2 class="section-title">🔄 Flip Panels</h2>
+    <div class="flip-container">
+      <div class="flip-card">
+        <div class="flip-front">👨‍💻 Dev</div>
+        <div class="flip-back">💡 Ideas</div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-front">🎬 Animate</div>
+        <div class="flip-back">🎨 Style</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grid-based Profile Wall -->
+  <section class="section profile-wall-section">
+    <h2 class="section-title">🧑‍🚀 Crew Members</h2>
+    <div class="profile-grid">
+      <div class="profile-box">Alpha</div>
+      <div class="profile-box">Beta</div>
+      <div class="profile-box">Gamma</div>
+      <div class="profile-box">Zeta</div>
+    </div>
+  </section>
+
+  <!-- Interactive Quotes Spinner -->
+  <section class="section quote-spinner-section">
+    <h2 class="section-title">🔄 Random Wisdom</h2>
+    <div class="quote-box">
+      <p id="randomQuote">"Keep scrolling... inspiration is near."</p>
+      <button onclick="newQuote()">Refresh Quote</button>
+    </div>
+  </section>
+
+  <!-- Radar Ping Visual -->
+  <div class="radar-wrapper">
+    <div class="radar-circle"></div>
+    <div class="radar-ping"></div>
+  </div>
+
+  <!-- Legacy Warning -->
+  <section class="section legacy-warning">
+    <h2 class="section-title">⚠️ Legacy Warning</h2>
+    <p>This site pushes browser limits. Best viewed in modern browsers (and in light-speed mode!).</p>
+  </section>
+
+  <!-- Developer Mode Banner -->
+  <div class="dev-mode-banner" id="devBanner">
+    <p>👨‍🚀 Dev Mode Enabled – You're seeing debug FX and live logs</p>
+  </div>
+  <!-- Holographic Loader -->
+  <div class="holo-loader" id="holoLoader">
+    <div class="ring-loader"></div>
+    <p>Initializing Systems...</p>
+  </div>
+
+  <!-- Blackhole Scroll Sucker -->
+  <div class="blackhole-scroll" id="scrollSucker">
+    <div class="blackhole-core"></div>
+    <div class="blackhole-spin"></div>
+  </div>
+
+  <!-- Nebula Background Smoke -->
+  <div class="nebula-smoke">
+    <div class="smoke-puff puff-1"></div>
+    <div class="smoke-puff puff-2"></div>
+    <div class="smoke-puff puff-3"></div>
+  </div>
+
+  <!-- Time Display HUD -->
+  <section class="section time-hud-section">
+    <h2 class="section-title">🕒 Real-Time HUD</h2>
+    <div class="time-hud">
+      <p>Earth Time: <span id="earthTime">00:00</span></p>
+      <p>Galaxy Time: <span id="galaxyTime">0000 GT</span></p>
+    </div>
+  </section>
+
+  <!-- Global Weather FX Panel -->
+  <section class="section weather-fx-section">
+    <h2 class="section-title">⛅ Space Weather</h2>
+    <div class="weather-toggle">
+      <button onclick="toggleWeather('rain')">Rain</button>
+      <button onclick="toggleWeather('snow')">Snow</button>
+      <button onclick="toggleWeather('clear')">Clear</button>
+    </div>
+    <div id="weatherFX"></div>
+  </section>
+
+  <!-- Aurora Lights FX -->
+  <div class="aurora-lights">
+    <div class="aurora-strip aurora-1"></div>
+    <div class="aurora-strip aurora-2"></div>
+  </div>
+
+  <!-- Planetary Orbit System (Canvas or CSS) -->
+  <div class="orbit-system">
+    <div class="planet planet-1"></div>
+    <div class="planet planet-2"></div>
+    <div class="planet planet-3"></div>
+    <div class="orbit-circle orbit-1"></div>
+    <div class="orbit-circle orbit-2"></div>
+    <div class="orbit-circle orbit-3"></div>
+  </div>
+
+  <!-- In-Page Teleport Effect -->
+  <section class="section teleport-section">
+    <h2 class="section-title">🌀 Teleport Panel</h2>
+    <p>Click below to trigger a section warp:</p>
+    <button onclick="teleportTo('projects')">⚡ Warp to Projects</button>
+  </section>
+
+  <!-- Voice Command Status -->
+  <section class="section voice-control-section">
+    <h2 class="section-title">🎙 Voice Mode</h2>
+    <p>Status: <span id="voiceStatus">Offline</span></p>
+    <button onclick="activateVoice()">Activate</button>
+  </section>
+
+  <!-- Light/Dark Cycle Visual -->
+  <div class="light-cycle">
+    <div class="sun-orb"></div>
+    <div class="moon-orb"></div>
+    <div class="sky-gradient"></div>
+  </div>
+
+  <!-- Mars Rover Path Line -->
+  <section class="section rover-section">
+    <h2 class="section-title">🤖 Mars Rover Trail</h2>
+    <svg class="rover-path" viewBox="0 0 300 100">
+      <path d="M10 90 Q 150 -20 290 90" stroke="#f45" fill="transparent" stroke-width="2" />
+    </svg>
+  </section>
+
+  <!-- Meta Data Banner -->
+  <div class="meta-data-banner">
+    <p>🧬 Website Genome: 100% HTML / CSS / JS — No Libraries, No Excuses.</p>
+  </div>
+
+  <!-- Sound Waveform Strip -->
+  <div class="sound-strip">
+    <div class="wave wave-1"></div>
+    <div class="wave wave-2"></div>
+    <div class="wave wave-3"></div>
+    <div class="wave wave-4"></div>
+    <div class="wave wave-5"></div>
+  </div>
+
+  <!-- Debug Console Toggle -->
+  <div class="debug-toggle">
+    <label>
+      <input type="checkbox" id="debugToggle" />
+      <span>Show Dev Console</span>
+    </label>
+  </div>
+  <!-- Environmental Sensors Section -->
+  <section class="section sensors-section">
+    <h2 class="section-title">🧭 Environmental Sensors</h2>
+    <div class="sensor-data">
+      <p>Browser: <span id="browserName">Detecting...</span></p>
+      <p>Device: <span id="deviceType">Checking...</span></p>
+      <p>OS: <span id="osName">Scanning...</span></p>
+    </div>
+  </section>
+
+  <!-- Galactic License Section -->
+  <section class="section license-section">
+    <h2 class="section-title">📑 License</h2>
+    <p>This code is open-source under the Intergalactic Dev License.</p>
+    <ul class="license-points">
+      <li>✅ Reuse for learning</li>
+      <li>✅ Remix for fun</li>
+      <li>❌ Do not commercialize without warp-permission</li>
+    </ul>
+  </section>
+
+  <!-- Space Map Image -->
+  <section class="section map-section">
+    <h2 class="section-title">🗺 Galactic Map</h2>
+    <img src="galaxy-map.jpg" alt="Galactic Map" class="map-img"/>
+    <p>Click on a quadrant to initiate hyperspace jump (feature coming soon!).</p>
+  </section>
+
+  <!-- Download My Universe -->
+  <section class="section download-section">
+    <h2 class="section-title">⬇️ Download Full Source</h2>
+    <button onclick="window.open('source.zip', '_blank')">Get the .zip 🚀</button>
+  </section>
+
+  <!-- Warp Exit Protocol -->
+  <div class="warp-exit">
+    <h2>🛑 Exiting Galactic Interface...</h2>
+    <p>All animations will gradually power down. UI will dissolve into the void.</p>
+    <button onclick="shutdownSequence()">Confirm Exit</button>
+  </div>
+
+  <!-- Power Down Curtain -->
+  <div id="powerCurtain" class="power-down">
+    <h3>System Offline</h3>
+    <p>See you next orbit.</p>
+  </div>
+
+  <!-- Final Thanks Section -->
+  <section class="section thankyou-section">
+    <h2 class="section-title">🙏 Thanks for Visiting</h2>
+    <p>You’ve explored a handcrafted galactic frontend made with 💙 using just HTML, CSS & JavaScript.</p>
+    <p>Now go build your own universe 🌠</p>
+  </section>
+
+  <!-- Jump to Top Again -->
+  <div class="jump-top-wrapper">
+    <button onclick="scrollToTop()" class="btn-top">⬆ Warp to Top</button>
+  </div>
+
+  <!-- Last FX Layer -->
+  <div class="final-fx-layer">
+    <div class="halo halo-1"></div>
+    <div class="halo halo-2"></div>
+    <div class="halo halo-3"></div>
+  </div>
+
+  <!-- Supernova Flash Ending -->
+  <div class="supernova-flash" id="supernovaFlash"></div>
+
+  <!-- Void Fade -->
+  <div class="void-fade" id="voidFade"></div>
+
+  <!-- Stars Outro Animation -->
+  <div class="stars-outro">
+    <div class="outro-star star-1"></div>
+    <div class="outro-star star-2"></div>
+    <div class="outro-star star-3"></div>
+    <div class="outro-star star-4"></div>
+    <div class="outro-star star-5"></div>
+  </div>
+
+  <!-- Final Script Tag Reminder -->
+  <p class="final-reminder">📌 Don’t forget to include <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code> at the end!</p>
+
+  <!-- Final Floating Elements -->
+  <div class="floating-elements">
+    <div class="float-atom"></div>
+    <div class="float-satellite"></div>
+    <div class="float-crystal"></div>
+  </div>
+
+  <!-- Outro HUD Panels -->
+  <div class="hud-outro-panel">
+    <p>Status: Galactic Systems Stable ✅</p>
+    <p>Communication Link: Active 📡</p>
+    <p>Signal Strength: ∞</p>
+  </div>
+
+  <!-- Epic Ending Quote -->
+  <section class="section ending-quote">
+    <h2 class="section-title">🌟 Final Transmission</h2>
+    <blockquote>
+      “Any sufficiently advanced frontend is indistinguishable from magic.”  
+      <footer>— Arthur CSSden</footer>
+    </blockquote>
+  </section>
+
+  <!-- Memory Cleaner -->
+  <div class="memory-cleaner">
+    <p>💾 Clearing memory buffers...</p>
+    <div class="buffer-bar"></div>
+  </div>
+
+  <!-- System Restore Loader -->
+  <div class="system-restore" id="systemRestore">
+    <p>⏳ Rebooting UI systems...</p>
+    <div class="restore-loader"></div>
+  </div>
+
+  <!-- Closing Warp Ring -->
+  <div class="closing-warp">
+    <div class="warp-ring-inner"></div>
+    <div class="warp-ring-outer"></div>
+  </div>
+
+  <!-- Credits Overlay (JS will toggle this on completion) -->
+  <div class="overlay credits-overlay" id="creditsOverlay">
+    <h2>👾 Credits</h2>
+    <ul>
+      <li>Design & Code: The One and Only HTML+CSS+JS Bot 🔨🤖🔧</li>
+      <li>Challenge Host: The Legend – <strong>TU</strong> 👑</li>
+      <li>Tools: Keyboard, Brain, and Space Imagination</li>
+    </ul>
+    <button onclick="closeCredits()">Done</button>
+  </div>
+
+  <!-- Invisible Easter Trigger -->
+  <div id="easterTrigger" onclick="triggerEaster()">🌌</div>
+
+  <!-- Space Divider -->
+  <hr class="space-divider" />
+
+  <!-- Closing Tags -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
